@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="main">
+        <div class="logindiv"  id="logininp">
+            <div class="text">
+                <div>Your phone number</div>
+                <p>Choose your country phone code</p>
+            </div>
+            <div class="selectdiv" id="logininp1">
+                <select name="" id="country">
+                    <option value="+998">Uzbeksitan</option>
+                    <option value="+1">USA</option>
+                    <option value="+8">Korea</option>
+                    <option value="+7">Russia</option>
+                    <option value="+996">Kirghistan </option>
+                    <option value="+193">Afghanistan</option>
+                </select>
+            </div>
+            <div class="inputs" >
+                <input id="disinput" value="+998" class="bir" type="text" disabled>
+                <input class="ikki" id="phonenumber" type="text" placeholder="-- --- -- --">
+            </div>
+            <div class="nextbtn">
+                <button onclick="StartBtn1()">Continue</button>
+            </div>
+            <div class="qrcodediv">
+                <p>Enter fast with QR-code</p>
+            </div>
+        </div>
+        <div class="logindiv" id="codeinp" style="margin-top: -55px;">
+            <div class="text" >
+                <div id="myphone">+998911182884</div>
+                <p style="margin-top: 10px;">Your activation code was sent to your phone number</p>
+            </div>
+            
+            <div class="inputs1" style="margin-top: 20px;">
+                <div>
+                    <label style="color: rgb(180, 180, 255);" for="">Code</label>
+                </div>
+                <input id="codecode" style="margin-top: 15px;" class="ikki1" type="text">
+            </div>
+            <div class="nextbtn" style="margin-top: 50px;">
+                <button onclick="StartBtn2()">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

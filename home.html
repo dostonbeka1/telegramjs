@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="left-container">
+            <div class="menu-wrapper">
+                <p>
+                    <ion-icon onclick="openNav()" id="muni-icon" name="menu-outline"></ion-icon>
+                </p>
+                <div>
+                    <input id="search-main" type="search" placeholder="Search">
+                </div>
+
+            </div>
+            <div id="users">
+                no users
+            </div>
+        </div>
+        <div id="mid11" class="middle-container">
+            <div class="tg-header">
+                <div class="profile-info">
+                    <img  id="defimg" style="width: 50px;height: 50px;transition: .3s;"
+                        src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt="">
+                    <div>
+                        <h2 id="defname">Username</h2>
+                        <p id="deftime">Last seen 12:12</p>
+                    </div>
+                </div>
+                <div class="corner-icons">
+                    <p>
+                        <ion-icon id="corner-ics" name="search-outline"></ion-icon>
+                    </p>
+                    <p onclick="Ochish1()">
+                        <ion-icon id="corner-ics" name="journal-outline"></ion-icon>
+                    </p>
+                    <p>
+                        <ion-icon id="corner-ics" name="ellipsis-vertical-outline"></ion-icon>
+                        </ion-icon>
+                    </p>
+                </div>
+            </div>
+            <div class="chat-main-div">
+                <div id="idchats" class="chats-clas">
+
+                </div>
+            </div>
+            <div class="send-chat-div">
+                <div class="rasm-och">
+                   
+                    <div class="image-upload">
+                        <label for="file-input">
+                            <p>
+                                <ion-icon id="previewImg" id="corner-ics" name="attach-outline">
+
+                                </ion-icon>
+                            </p>
+                        </label>
+
+                        <input id="file-input" type="file"  style="display: none;" />
+                    </div>
+                </div>
+                <div class="main-inp">
+                    <input id="asosiysend" type="text" placeholder="Message ...">
+                </div>
+                <div class="main-send-btn">
+                    <p>
+                        <ion-icon id="corner-ics" onclick="toggleEmojiDrawer()" name="happy-outline"></ion-icon>
+                    </p>
+                    <button id="sendanimation" onclick="Addtoarr()">
+                        <ion-icon name="send-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mid12" class="right-container">
+            <div id="soon1" class="right-nav">
+                <h1>Info</h1>
+                <ion-icon onclick="Yopish1()" class="Exit" name="close-outline"></ion-icon>
+            </div>
+            <div id="soon2" class="forpadding">
+                <div class="profile-info">
+                    <img id="defimg1" style="width: 150px;height: 150px;border-radius: 100%;"
+                        src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt="">
+                    <div>
+                        <h3 style="font-size: 33px;color: rgb(246, 215, 215);"  id="defname1">Username</h3>
+                        <p style="font-size: 19px;margin-top: 10px;" id="deftime1">Last seen 12:12</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div id="soon3" class="data-infos">
+                <h3  id="username">Username: </h3>
+
+                
+                <div  id="drawer" class="emoji-drawer hidden"> 
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😀</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😃</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😄</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😁</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😆</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">🧑🏼</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">👊🏻</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">👫🏻</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">👩</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😩</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">🌖</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">📺</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😲</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">👆🏻</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">🥴</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😇</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">💚</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">💌</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">👽</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">👨🏽‍🎓</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">👷🏻</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😀</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😃</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😄</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😁</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😆</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">🧑🏼</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">👊🏻</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">👫🏻</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">👩</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😩</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">🌖</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">📺</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😲</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">👆🏻</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">🥴</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">😇</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">💚</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">💌</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">👽</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">👨🏽‍🎓</div>
+                    <div class="emoji" onclick="addEmoji(this.innerHTML)">👷🏻</div>
+                </div>
+                   
+               
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                      <img  id="defimg3" style="width: 550px;height: 550px;transition: .3s;"
+                      src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt="">
+                      <span class="close">&times;</span>
+                  </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <div id="topdiv" class="top-div">
+            <div class="qator-1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz7gjz_tqhCGxPjl-J099B6Ll8LDZAkNqXpvo6gXoc-3dTYzCf4lvxx1T_lJa7BFP1G2g&usqp=CAU"
+                    alt="">
+                <p>
+                    <ion-icon id="all-words" class="iconbook" name="bookmark-outline"></ion-icon>
+                </p>
+            </div>
+            <div class="qator-2">
+                <div class="profile-text">
+                    <h3 id="all-words">Jastin</h3>
+                    <h4 id="all-words">+19090909090</h4>
+                </div>
+                <p>
+                    <ion-icon id="all-words" class="chevrondown" name="chevron-down-outline"></ion-icon>
+                </p>
+            </div>
+
+        </div>
+        <div class="clik1">
+            <p>
+                <ion-icon class="all-icons" name="people-outline"></ion-icon>
+            </p>
+            <div id="all-words"> New Group </div>
+        </div>
+        <div class="clik1">
+            <p>
+                <ion-icon class="all-icons" name="megaphone-outline"></ion-icon>
+            </p>
+            <div id="all-words"> New Channel</div>
+        </div>
+        <div class="clik1">
+            <p>
+                <ion-icon class="all-icons" name="person-outline"></ion-icon>
+            </p>
+            <div id="all-words"> Contacts </div>
+        </div>
+        <div class="clik1">
+            <p>
+                <ion-icon class="all-icons" name="call-outline"></ion-icon>
+            </p>
+            <div id="all-words"> Calls </div>
+        </div>
+        <div class="clik1">
+            <p>
+                <ion-icon class="all-icons" name="settings-outline"></ion-icon>
+            </p>
+            <div id="all-words"> Settings </div>
+        </div>
+        <div class="clik1">
+            <p>
+                <ion-icon class="all-icons" name="moon-outline"></ion-icon>
+            </p>
+            <div>
+                <p id="all-words">Night Mode</p>
+                <label class="switch">
+                    <input id="tunkun" type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="profile-text-1">
+            <h3>Telegram Desktop</h3>
+            <h4>Version 2.5.8 - About</h4>
+        </div>
+
+
+    </div>
+  
+    
+    <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("defimg");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+<style>
+   .emoji-drawer {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 32px;
+    transition: opacity 0.2s;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.emoji {
+    text-align: center;
+    font-size: 24px;
+    padding: 8px;
+}
+
+.emoji:hover {
+    cursor: pointer;
+}
+
+</style>
+    <script>
+        
+        function addEmoji(emoji) {
+  let input= document.getElementById('asosiysend');
+  
+  input.value += emoji;
+}
+
+function toggleEmojiDrawer() {
+  let drawer = document.getElementById('drawer');
+  
+  if (drawer.classList.contains('hidden')) {
+    drawer.classList.remove('hidden');
+    document.getElementById('soon1').style.display = 'none'
+    document.getElementById('username').style.display = 'none'
+    document.getElementById('soon2').style.display = 'none'
+  } else {
+    drawer.classList.add('hidden');
+    document.getElementById('soon1').style.display = 'flex'
+    document.getElementById('username').style.display = 'block'
+    document.getElementById('soon2').style.display = 'block'
+  }
+}
+    </script>
+
+    <script src="home.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
