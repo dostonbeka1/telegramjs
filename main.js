@@ -1,3 +1,7 @@
+function forgit(params) {
+    
+}
+
 function StartBtn() {
     location.href = 'login.html'
 }
@@ -6,6 +10,7 @@ function StartBtn2() {
     localStorage.setItem('code',code)
     location.href = 'home.html'
 }
+
 var concode = '+998'
 
 function StartBtn1() {
